@@ -100,15 +100,54 @@ with open("contents.txt", "r") as contents:
             elif current["file"] != last_file:
                 file_path = f"{current['main']}/{current['sub']}/{current['file']}"
 
+            # !!! BE CAREFUL! IF YOU ARE ABOUT TO EDIT BELOW PATH STRING, YOU MUST KNOW WHAT YOU ARE DOING NOW.
             # To locate all directories & files in the output folder
-            file_path = "output/" + file_path
+            output_path = "example/output"
+            # output_path = "D:/OneDrive/ALL CODES/Study Notes/_Books_/C - KNK - C Programming A Modern Approach"
+            # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+            file_path = f"{output_path}/{file_path}"
+
+            # Normalize path: eliminating double slashes, etc.
+            os.path.normpath(file_path)
 
             # for Debugging
             print(file_path)
 
+            # Notice 260 character path length
+            assert (
+                len(file_path) <= 256
+            ), """
+
+            << Assertion (to prevent FileNotFoundError caused by path length limit) >> 
+            
+            260 character path length limit is enabled in Windows!
+            To disable it, follow below instruction.
+            
+            1. Open regedit 
+            2. Computer\\HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FileSystem
+            3. Enable LongPaths (change value from 0 to 1)
+            4. Delete or Comment above assert statement
+
+            """
+
             if re.search(r"\.txt$", file_path):
-                # Create directory
-                os.makedirs(os.path.dirname(file_path), exist_ok=True)
-                # Create file
-                with open(file_path, "w") as txt_file:
-                    txt_file.write(" ")
+                try:
+                    # Create directory (Even if the directory exists, don't raise exception.)
+                    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+                    # Create text file with a whitespace.
+                    with open(file_path, "w") as txt_file:
+                        txt_file.write(" ")
+
+                except FileNotFoundError as e:
+                    print(e)
+                    print(
+                        """
+                        
+                        << Comment >> 
+                        
+                        Please check if the 'contents.txt' formats and characters are legal. (some special character could be hiding.
+                        
+                        """
+                    )
