@@ -1,0 +1,811 @@
+==================================
+1 INTRODUCING C 1
+
+1.1 History of C 1
+- Origins 1
+- Standardization 2
+- C-Based Languages 3
+
+1.2 Strengths and Weaknesses of C 4
+- Strengths 4
+- Weaknesses 5
+- Effective Use of C 6
+
+==================================
+2 C FUNDAMENTALS 9
+
+2.1 Writing a Simple Program 9
+- Program: Printing a Pun 9
+- Compiling and Linking 10
+- Integrated Development Environments 11
+
+2.2 The General Form of a Simple Program 12
+- Directives 12
+- Functions 13
+- Statements 14
+- Printing Strings 14
+
+2.3 Comments 15
+- Comments 15
+
+2.4 Variables and Assignment 17
+- Types 17
+- Declarations 17
+- Assignment 18
+- Printing the Value of a Variable 19
+- Program: Computing the Dimensional Weight of a Box 20
+- Initialization 21
+- Printing Expressions 22
+
+2.5 Reading Input 22
+- Program: Computing the Dimensional Weight of a Box (Revisited) 22
+
+2.6 Defining Names for Constants 23
+- Program: Converting from Fahrenheit to Celsius 24
+
+2.7 Identifiers 25
+- Keywords 26
+
+2.8 Layout of a C Program 27
+- Layout of a C Program 27
+
+==================================
+3 FORMATTED INPUT/OUTPUT 37
+
+3.1 The printf Function 37
+- Conversion Specifications 38
+- Program: Using printf to Format Numbers 40
+- Escape Sequences 41
+
+3.2 The scanf Function 42
+- How scanf Works 43
+- Ordinary Characters in Format Strings 45
+- Confusing printf with scanf 45
+- Program: Adding Fractions 46
+
+==================================
+4 EXPRESSIONS 53
+
+4.1 Arithmetic Operators 54
+- Operator Precedence and Associativity 55
+- Program: Computing a UPC Check Digit 56
+
+4.2 Assignment Operators 58
+- Simple Assignment 58
+- Lvaiues 59
+- Compound Assignment 60
+
+4.3 Increment and Decrement Operators 61
+- Increment and Decrement Operators 61
+
+4.4 Expression Evaluation 52
+- Order of Subexpression Evaluation 64
+
+4.5 Expression Statements 65
+- Expression Statements 65
+
+==================================
+5 SELECTION STATEMENTS 73
+
+5.1 Logical Expressions 74
+- Relational Operators 74
+- Equality Operators 75
+- Logical Operators 75
+
+5.2 The if Statement 76
+- Compound Statements 77
+- The else Clause 78
+- Cascaded if Statements 80
+- Program: Calculating a Broker's Commission 81
+- The "Dangling else" Problem 82
+- Conditional Expressions 83
+- Boolean Values in C89 84
+- Boolean Values in C99 85
+
+5.3 The switch Statement 86
+- The Role of the break Statement 88
+- Program: Printing a Date in Legal Form 89
+
+==================================
+6 LOOPS 99
+
+6.1 The while Statement 99
+- Infinite Loops 101
+- Program: Printing a Table of Squares 102
+- Program: Summing a Series of Numbers 102
+
+6.2 The do Statement 103
+- Program: Calculating the Number of Digits in an Integer 104
+
+6.3 The for Statement 105
+- for Statement Idioms 106
+- Omitting Expressions in a for Statement 107
+- for Statements in C99 108
+- The Comma Operator 109
+- Program: Printing a Table of Squares (Revisited) 110
+
+6.4 Exiting from a Loop 111
+- The break Statement 111
+- The continue Statement 112
+- The goto Statement 113
+- Program: Balancing a Checkbook 114
+
+6.5 The Null Statement 116
+- The Null Statement 116
+
+==================================
+7 BASIC TYPES 125
+
+7.1 Integer Types 125
+- Integer Types in C99 128
+- Integer Constants 128
+- Integer Constants in C99 129
+- Integer Overflow 130
+- Reading and Writing Integers 130
+- Program: Summing a Series of Numbers (Revisited) 131
+
+7.2 Floating Types 132
+- Floating Constants 133
+- Reading and Writing Floating-Point Numbers 134
+
+7.3 Character Types 134
+- Operations on Characters 135
+- Signed and Unsigned Characters 136
+- Arithmetic Types 136
+- Escape Sequences 137
+- Character-Handling Functions 138
+- Reading and Writing Characters using scanf and printf 139
+- Reading and Writing Characters using getchar and putchar 140
+- Program: Determining the Length of a Message 141
+
+7.4 Type Conversion 142
+- The Usual Arithmetic Conversions 143
+- Conversion During Assignment 145
+- Implicit Conversions in C99 146
+- Casting 147
+
+7.5 Type Definitions 149
+- Advantages of Type Definitions 149
+- Type Definitions and Portability 150
+
+7.6 The eizeof Operator 151
+- The eizeof Operator 151
+
+==================================
+8 ARRAYS 161
+
+8.1 One-Dimensional Arrays 161
+- Array Subscripting 162
+- Program: Reversing a Series of Numbers 164
+- Array Initialization 164
+- Designated Initializers 165
+- Program: Checking a Number for Repeated Digits 166
+- Using the sizeof Operator with Arrays 167
+- Program: Computing Interest 168
+
+8.2 Multidimensional Arrays 169
+- Initializing a Multidimensional Array 171
+- Constant Arrays 172
+- Program: Dealing a Hand of Cards 172
+
+8.3 Variable-Length Arrays (C99) 174
+- Variable-Length Arrays (C99) 174
+
+==================================
+9 FUNCTIONS 183
+
+9.1 Defining and Calling Functions 183
+- Program: Computing Averages 184
+- Program: Printing a Countdown 185
+- Program: Printing a Pun (Revisited) 186
+- Function Definitions 187
+- Function Calls 189
+- Program: Testing Whether a Number Is Prime 190
+
+9.2 Function Declarations 191
+- Function Declarations 191
+
+9.3 Arguments 193
+- Argument Conversions 194
+- Array Arguments 195
+- Variable-Length Array Parameters 198
+- Using static in Array Parameter Declarations 200
+- Compound Literals 200
+
+9.4 The return Statement 201
+- The return Statement 201
+
+9.5 Program Termination 202
+- The exit Function 203
+
+9.6 Recursion 204
+- The Quicksort Algorithm 205
+- Program: Quicksort 207
+
+
+==================================
+10 PROGRAM ORGANIZATION 219
+
+10.1 Local Variables 219
+- Static Local Variables 220
+- Parameters 221
+
+10.2 External Variables 221
+- Example: Using External Variables to Implement a Stack 221
+- Pros and Cons of External Variables 222
+- Program: Guessing a Number 224
+
+10.3 Blocks 227
+- Blocks 227
+
+10.4 Scope 228
+- Scope 228
+
+10.5 Organizing a C Program 229
+- Program: Classifying a Poker Hand 230
+
+==================================
+11 POINTERS 241
+
+11.1 Pointer Variables 241
+- Declaring Pointer Variables 242
+
+11.2 The Address and Indirection Operators 243
+- The Address Operator 243
+- The Indirection Operator 244
+
+11.3 Pointer Assignment 245
+- Pointer Assignment 245
+
+11.4 Pointers as Arguments 247
+- Program: Finding the Largest and Smallest Elements in an Array 249
+- Using const to Protect Arguments 250
+
+11.5 Pointers as Return Values 251
+- Pointers as Return Values 251
+
+==================================
+12 POINTERS AND ARRAYS 257
+
+12.1 Pointer Arithmetic 257
+- Adding an Integer to a Pointer 258
+- Subtracting an Integer from a Pointer 259
+- Subtracting One Pointer from Another 259
+- Comparing Pointers 260
+- Pointers to Compound Literals 260
+
+12.2 Using Pointers for Array Processing 260
+- Combining the * and ++ Operators 262
+
+12.3 Using an Array Name as a Pointer 263
+- Program: Reversing a Series of Numbers (Revisited) 264
+- Array Arguments (Revisited) 265
+- Using a Pointer as an Array Name 266
+
+12.4 Pointers and Multidimensional Arrays 267
+- Processing the Elements of a Multidimensional Array 267
+- Processing the Rows of a Multidimensional Array 268
+- Processing the Columns of a Multidimensional Array 269
+- Using the Name of a Multidimensional Array as a Pointer 269
+
+12.5 Pointers and Variable-Length Arrays (C99) 270
+- Pointers and Variable-Length Arrays (C99) 270
+
+==================================
+13 STRINGS 277
+
+13.1 String Literals 277
+- Escape Sequences in String Literals 278
+- Continuing a String Literal 278
+- How String Literals Are Stored 279
+- Operations on String Literals 279
+- String Literals versus Character Constants 280
+
+13.2 String Variables 281
+- Initializing a String Variable 281
+- Character Arrays versus Character Pointers 283
+
+13.3 Reading and Writing Strings 284
+- Writing Strings Using printf and puts 284
+- Reading Strings Using scanf and gets 285
+- Reading Strings Character by Character 286
+
+13.4 Accessing the Characters in a String 287
+- Accessing the Characters in a String 287
+
+13.5 Using the C String Library 289
+- The strcpy (String Copy) Function 290
+- The strlen (String Length) Function 291
+- The strcat (String Concatenation) Function 291
+- The strcmp (String Comparison) Function 292
+- Program: Printing a One-Month Reminder List 293
+
+13.6 String Idioms 296
+- Searching for the End of a String 296
+- Copying a String 298
+
+13.7 Arrays of Strings 300
+- Command-Line Arguments 302
+- Program: Checking Planet Names 303
+
+==================================
+14 THE PREPROCESSOR 315
+
+14.1 How the Preprocessor Works 315
+- How the Preprocessor Works 315
+
+14.2 Preprocessing Directives 318
+- Preprocessing Directives 318
+
+14.3 Macro Definitions 319
+- Simple Macros 319
+- Parameterized Macros 321
+- The # Operator 324
+- The ## Operator 324
+- General Properties of Macros 325
+- Parentheses in Macro Definitions 326
+- Creating Longer Macros 328
+- Predefined Macros 329
+- Additional Predefined Macros in C99 330
+- Empty Macro Arguments 331
+- Macros with a Variable Number of Arguments 332
+- The __func__ Identifier 333
+
+14.4 Conditional Compilation 333
+- The #if and #endif Directives 334
+- The defined Operator 335
+- The #ifdef and #ifndef Directives 335
+- The #elif and #else Directives 336
+- Uses of Conditional Compilation 337
+
+14.5 Miscellaneous Directives 338
+- The #error Directive 338
+- The #line Directive 339
+- The #pragma Directive 340
+- The _Pragma Operator 341
+
+
+==================================
+15 WRITING LARGE PROGRAMS 349
+
+15.1 Source Files 349
+- Source Files 349
+
+15.2 Header Files 350
+- The #include Directive 351
+- Sharing Macro Definitions and Type Definitions 353
+- Sharing Function Prototypes 354
+- Sharing Variable Declarations 855
+- Nested Includes 357
+- Protecting Header Files 357
+- #error Directives in Header Files 858
+
+15.3 Dividing a Program into Files 359
+- Program: Text Formatting 359
+
+15.4 Building a Multiple-File Program 366
+- Makefiles 366
+- Errors During Linking 868
+- Rebuilding a Program 369
+- Defining Macros Outside a Program 871
+
+
+==================================
+16 STRUCTURES, UNIONS, AND ENUMERATIONS 377
+
+16.1 Structure Variables 377
+- Declaring Structure Variables 378
+- Initializing Structure Variables 379
+- Designated Initializers 380
+- Operations on Structures 381
+
+16.2 Structure Types 382
+- Declaring a Structure Tag 383
+- Defining a Structure Type 384
+- Structures as Arguments and Return Values 384
+- Compound Literals 386
+
+16.3 Nested Arrays and Structures 386
+- Nested Structures 387
+- Arrays of Structures 387
+- Initializing an Array of Structures 388
+- Program: Maintaining a Parts Database 389
+
+16.4 Unions 396
+- Using Unions to Save Space 398
+- Using Unions to Build Mixed Data Structures 399
+- Adding a "Tag Field" to a Union 400
+
+16.5 Enumerations 401
+- Enumeration Tags and Type Names 402
+- Enumerations as Integers 408
+- Using Enumerations to Declare "Tag Fields" 404
+
+==================================
+17 ADVANCED USES OF POINTERS 413
+
+17.1 Dynamic Storage Allocation 414
+- Memory Allocation Functions 414
+- Null Pointers 414
+
+17.2 Dynamically Allocated Strings 416
+- Using malloc to Allocate Memory for a String 416
+- Using Dynamic Storage Allocation in String Functions 417
+- Arrays of Dynamically Allocated Strings 418
+- Program: Printing a One-Month Reminder List (Revisited) 418
+
+17.3 Dynamically Allocated Arrays 420
+- Using malloc to Allocate Storage for an Array 420
+- The calloc Function 421
+- The realloc Function 421
+
+17.4 Deallocating Storage 422
+- The free Function 423
+- The "Dangling Pointer" Problem 424
+
+17.5 Linked Lists 424
+- Declaring a Node Type 425
+- Creating a Node 425
+- The -> Operator 426
+- Inserting a Node at the Beginning of a Linked List 427
+- Searching a Linked List 429
+- Deleting a Node from a Linked List 431
+- Ordered Lists 433
+- Program: Maintaining a Parts Database (Revisited) 433
+
+17.6 Pointers to Pointers 438
+- Pointers to Pointers 438
+
+17.7 Pointers to Functions 439
+- Function Pointers as Arguments 439
+- The qsort Function 440
+- Other Uses of Function Pointers 442
+- Program: Tabulating the Trigonometric Functions 443
+
+17.8 Restricted Pointers (C99) 445
+- Restricted Pointers (C99) 445
+
+17.9 Flexible Array Members (C99) 447
+- Flexible Array Members (C99) 447
+
+==================================
+18 DECLARATIONS 457
+
+18.1 Declaration Syntax 457
+- Declaration Syntax 457
+
+18.2 Storage Classes 459
+- Properties of Variables 459
+- The auto Storage Class 460
+- The static Storage Class 461
+- The extern Storage Class 462
+- The register Storage Class 463
+- The Storage Class of a Function 464
+- Summary 465
+
+18.3 Type Qualifiers 466
+- Type Qualifiers 466
+
+18.4 Declarators 467
+- Deciphering Complex Declarations 468
+- Using Type Definitions to Simplify Declarations 470
+
+18.5 Initializers 470
+- Uninitialized Variables 472
+
+18.6 Inline Functions (C99) 472
+- Inline Definitions 473
+- Restrictions on Inline Functions 474
+- Using Inline Functions with GCC 475
+
+==================================
+19 PROGRAM DESIGN 483
+
+19.1 Modules 484
+- Cohesion and Coupling 486
+- Types of Modules 486
+
+19.2 Information Hiding 487
+- A Stack Module 487
+
+19.3 Abstract Data Types 491
+- Encapsulation 492
+- Incomplete Types 492
+
+19.4 A Stack Abstract Data Type 493
+- Defining the Interface for the Stack ADT 493
+- Implementing the Stack ADT Using a Fixed-Length Array 495
+- Changing the Item Type in the Stack ADT 496
+- Implementing the Stack ADT Using a Dynamic Array 497
+- Implementing the Stack ADT Using a Linked List 499
+
+19.5 Design Issues for Abstract Data Types 502
+- Naming Conventions 502
+- Error Handling 502
+- Generic ADTs 503
+- ADTs in Newer Languages 508
+
+
+==================================
+20 LOW-LEVEL PROGRAMMING 509
+
+20.1 Bitwise Operators 509
+- Bitwise Shift Operators 510
+- Bitwise Complement, And, Exclusive Or, and Inclusive Or 511
+- Using the Bitwise Operators to Access Bits 512
+- Using the Bitwise Operators to Access Bit-Fields 513
+- Program: XOR Encryption 514
+
+20.2 Bit-Fields In Structures 516
+- How Bit-Fields Are Stored 517
+
+20.3 Other Low-Level Techniques 518
+- Defining Machine-Dependent Types 518
+- Using Unions to Provide Multiple Views of Data 519
+- Using Pointers as Addresses 520
+- Program: Viewing Memory Locations 521
+- The volatile Type Qualifier 523
+
+==================================
+21 THE STANDARD LIBRARY 529
+
+21.1 Using the Library 529
+- Restrictions on Names Used in the Library 530
+- Functions Hidden by Macros 531
+
+21.2 C89 Library Overview 531
+- C89 Library Overview 531
+
+21.3 C99 Library Changes 584
+- C99 Library Changes 584
+
+21.4 The <stddef.h> Header: Common Definitions 535
+- The <stddef.h> Header: Common Definitions 535
+
+21.5 The <stdbool.h> Header (C99): Boolean Type and Values 536
+- The <stdbool.h> Header (C99): Boolean Type and Values 536
+
+==================================
+22 INPUT/OUTPUT 539
+
+22.1 Streams 540
+- File Pointers 540
+- Standard Streams and Redirection 540
+- Text Files versus Binary Files 541
+
+22.2 File Operations 543
+- Opening a File 543
+- Modes 544
+- Closing a File 545
+- Attaching a File to an Open Stream 546
+- Obtaining File Names from the Command Line 546
+- Program: Checking Whether a File Can Be Opened 547
+- Temporary Files 548
+- File Buffering 549
+- Miscellaneous File Operations 551
+
+22.3 Formatted I/O 551
+- The ...printf Functions 552
+- ...printf Conversion Specifications 552
+- C99 Changes to ...printf Conversion Specifications 555
+- Examples of ...printf Conversion Specifications 556
+- The ...scanf Functions 558
+- ...scanf Format Strings 559
+- ...scanf Conversion Specifications 560
+- C99 Changes to ...scanf Conversion Specifications 562
+- scanf Examples 563
+- Detecting End-of-File and Error Conditions 564
+
+22.4 Character I/O 566
+- Output Functions 566
+- Input Functions 567
+- Program: Copying a File 568
+
+22.5 Line I/O 569
+- Output Functions 569
+- Input Functions 570
+
+22.6 Block I/O 571
+- Block I/O 571
+
+22.7 File Positioning 572
+- Program: Modifying a File of Part Records 574
+
+22.8 String I/O 575
+- Output Functions 576
+- Input Functions 576
+
+==================================
+23 LIBRARY SUPPORT FOR NUMBERS AND CHARACTER DATA 589
+
+23.1 The <float.h> Header: Characteristics of Floating Types 589
+- The <float.h> Header: Characteristics of Floating Types 589
+
+23.2 The <limits.h> Header: Sizes of Integer Types 591
+- The <limits.h> Header: Sizes of Integer Types 591
+
+23.3 The <math.h> Header (C89): Mathematics 593
+- Errors 593
+- Trigonometric Functions 594
+- Hyperbolic Functions 595
+- Exponential and Logarithmic Functions 595
+- Power Functions 596
+- Nearest Integer, Absolute Value, and Remainder Functions 596
+
+23.4 The <math.h> Header (C99): Mathematics 597
+- IEEE Floating-Point Standard 598
+- Types 599
+- Macros 600
+- Errors 600
+- Functions 601
+- Classification Macros 602
+- Trigonometric Functions 608
+- Hyperbolic Functions 603
+- Exponential and Logarithmic Functions 604
+- Power and Absolute Value Functions 605
+- Error and Gamma Functions 606
+- Nearest Integer Functions 606
+- Remainder Functions 608
+- Manipulation Functions 608
+- Maximum, Minimum, and Positive Difference Functions 609
+- Floating Multiply-Add 610
+- Comparison Macros 611
+
+23.5 The <ctype.h> Header: Character Handling 612
+- Character-Classification Functions 612
+- Program: Testing the Character-Classification Functions 613
+- Character Case-Mapping Functions 614
+- Program: Testing the Case-Mapping Functions 614
+
+23.6 The <string.h> Header: String Handling 615
+- Copying Functions 616
+- Concatenation Functions 617
+- Comparison Functions 617
+- Search Functions 619
+- Miscellaneous Functions 622
+
+==================================
+24 ERROR HANDLING 627
+
+24.1 The <assert.h> Header: Diagnostics 628
+- The <assert.h> Header: Diagnostics 628
+
+24.2 The <errno.h> Header: Errors 629
+- The perror and strerror Functions 630
+
+24.3 The <signal.h> Header: Signal Handling 631
+- Signal Macros 631
+- The signal Function 632
+- Predefined Signal Handlers 683
+- The raise Function 634
+- Program: Testing Signals 634
+
+24.4 The <setjmp.h> Header: Nonlocal Jumps 635
+- Program: Testing setjmp/longjmp 636
+
+==================================
+25 INTERNATIONAL FEATURES 641
+
+25.1 The <locale.h> Header: Localization 642
+- Categories 642
+- The setlocale Function 643
+- The localeconv Function 644
+
+25.2 Multibyte Characters and Wide Characters 647
+- Multibyte Characters 648
+- Wide Characters 649
+- Unicode and the Universal Character Set 649
+- Encodings of Unicode 650
+- Multibyte/Wide-Character Conversion Functions 651
+- Multibyte/Wide-String Conversion Functions 658
+
+25.3 Digraphs and Trigraphs 654
+- Trigraphs 654
+- Digraphs 655
+- The <iso646.h> Header: Alternative Spellings 656
+
+25.4 Universal Character Names (C99) 656
+- Universal Character Names (C99) 656
+
+25.5 The <wchar.h> Header (C99): Extended Multibyte and Wide-Character Utilities 657
+- Stream Orientation 658
+- Formatted Wide-Character Input/Output Functions 659
+- Wide-Character Input/Output Functions 661
+- General Wide-String Utilities 662
+. Wide-Character Time-Conversion Functions 667
+- Extended Multibyte/Wide-Character Conversion Utilities 667
+
+25.6 The <wctype.h> Header (C99): Wide-Character
+- Classification and Mapping Utilities 671
+- Wide-Character Classification Functions 671
+- Extensible Wide-Character Classification Functions 672
+- Wide-Character Case-Mapping Functions 673
+- Extensible Wide-Character Case-Mapping Functions 673
+
+==================================
+26 MISCELLANEOUS LIBRARY FUNCTIONS 677
+
+26.1 The <stdarg.h> Header: Variable Arguments 677
+- Calling a Function with a Variable Argument List 679
+- The v...printf Functions 680
+- The v...scanf Functions 681
+
+26.2 The <stdlib.h> Header: General Utilities 682
+- Numeric Conversion Functions 682
+- Program: Testing the Numeric Conversion Functions 684
+- Pseudo-Random Sequence Generation Functions 686
+- Program: Testing the Pseudo-Random Sequence Generation Functions 687
+- Communication with the Environment 687
+- Searching and Sorting Utilities 689
+- Program: Determining Air Mileage 690
+- Integer Arithmetic Functions 691
+
+26.3 The <time.h> Header: Date and Time 592
+- Time Manipulation Functions 693
+- Time Conversion Functions 695
+- Program: Displaying the Date and Time 698
+
+
+==================================
+27 ADDITIONAL C99 SUPPORT FOR MATHEMATICS 705
+
+27.1 The <stdint.h> Header (C99): Integer Types 705
+- <stdint.h> Types 706
+- Limits of Specified-Width Integer Types 707
+- Limits of Other Integer Types 708
+- Macros for Integer Constants 708
+
+27.2 The <inttypes.h> Header (C99): Format Conversion of Integer Types 709
+- Macros for Format Specifiers 710
+- Functions for Greatest-Width Integer Types 711
+
+27.3 Complex Numbers (C99) 712
+- Definition of Complex Numbers 713
+- Complex Arithmetic 714
+- Complex Types in C99 714
+- Operations on Complex Numbers 715
+- Conversion Rules for Complex Types 715
+
+27.4 The <complex.h> Header (C99): Complex Arithmetic 717
+- <complex.h> Macros 717
+- The CX_LIMITED_RANGE Pragma 718
+- <complex.h> Functions 718
+- Trigonometric Functions 719
+- Hyperbolic Functions 720
+- Exponential and Logarithmic Functions 721
+- Power and Absolute-Value Functions 721
+- Manipulation Functions 722
+- Program: Finding the Roots of a Quadratic Equation 722
+
+27.5 The <tgmath.h> Header (C99): Type-Generic Math 723
+- Type-Generic Macros 724
+- Invoking a Type-Generic Macro 725
+
+27.6 The <fenv.h> Header (C99): Floating-Point Environment 726
+- Floating-Point Status Flags and Control Modes 727
+- <fenv.h> Macros 727
+- The FENV_ACCESS Pragma 728
+- Floating-Point Exception Functions 729
+- Rounding Functions 730
+- Environment Functions 780
+
+==================================
+Appendix A C Operators 735
+
+==================================
+Appendix B C99 versus C89 737
+
+==================================
+Appendix C C89 versus K&R C 743
+
+==================================
+Appendix D Standard Library Functions 747
+
+==================================
+Appendix E ASCII Character Set 801
+
+==================================
+Bibliography 803
+
+==================================
+Index 807
