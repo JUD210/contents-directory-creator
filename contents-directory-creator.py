@@ -65,9 +65,7 @@ with open("contents.txt", "r") as contents:
         # Remove leading and trailing whitespaces
         line = line.strip()
 
-        # If it's a new folder or file
-        if line != "" and line[0] != "=":
-
+        if line != "":
             # Validate dir/file name
             line = re.sub(r"(\/)|(\&)", ", ", line)
             line = re.sub(r"(\: )|(\:) ", " - ", line)
