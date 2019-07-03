@@ -1,4 +1,3 @@
-==================================
 1 INTRODUCING C 1
 
 1.1 History of C 1
@@ -11,7 +10,7 @@
 - Weaknesses 5
 - Effective Use of C 6
 
-==================================
+
 2 C FUNDAMENTALS 9
 
 2.1 Writing a Simple Program 9
@@ -49,7 +48,7 @@
 2.8 Layout of a C Program 27
 - Layout of a C Program 27
 
-==================================
+
 3 FORMATTED INPUT/OUTPUT 37
 
 3.1 The printf Function 37
@@ -63,7 +62,7 @@
 - Confusing printf with scanf 45
 - Program: Adding Fractions 46
 
-==================================
+
 4 EXPRESSIONS 53
 
 4.1 Arithmetic Operators 54
@@ -84,7 +83,7 @@
 4.5 Expression Statements 65
 - Expression Statements 65
 
-==================================
+
 5 SELECTION STATEMENTS 73
 
 5.1 Logical Expressions 74
@@ -106,7 +105,7 @@
 - The Role of the break Statement 88
 - Program: Printing a Date in Legal Form 89
 
-==================================
+
 6 LOOPS 99
 
 6.1 The while Statement 99
@@ -133,7 +132,7 @@
 6.5 The Null Statement 116
 - The Null Statement 116
 
-==================================
+
 7 BASIC TYPES 125
 
 7.1 Integer Types 125
@@ -171,7 +170,7 @@
 7.6 The eizeof Operator 151
 - The eizeof Operator 151
 
-==================================
+
 8 ARRAYS 161
 
 8.1 One-Dimensional Arrays 161
@@ -191,7 +190,7 @@
 8.3 Variable-Length Arrays (C99) 174
 - Variable-Length Arrays (C99) 174
 
-==================================
+
 9 FUNCTIONS 183
 
 9.1 Defining and Calling Functions 183
@@ -223,7 +222,7 @@
 - Program: Quicksort 207
 
 
-==================================
+
 10 PROGRAM ORGANIZATION 219
 
 10.1 Local Variables 219
@@ -244,7 +243,7 @@
 10.5 Organizing a C Program 229
 - Program: Classifying a Poker Hand 230
 
-==================================
+
 11 POINTERS 241
 
 11.1 Pointer Variables 241
@@ -264,7 +263,7 @@
 11.5 Pointers as Return Values 251
 - Pointers as Return Values 251
 
-==================================
+
 12 POINTERS AND ARRAYS 257
 
 12.1 Pointer Arithmetic 257
@@ -291,7 +290,7 @@
 12.5 Pointers and Variable-Length Arrays (C99) 270
 - Pointers and Variable-Length Arrays (C99) 270
 
-==================================
+
 13 STRINGS 277
 
 13.1 String Literals 277
@@ -328,7 +327,7 @@
 - Command-Line Arguments 302
 - Program: Checking Planet Names 303
 
-==================================
+
 14 THE PREPROCESSOR 315
 
 14.1 How the Preprocessor Works 315
@@ -365,7 +364,7 @@
 - The _Pragma Operator 341
 
 
-==================================
+
 15 WRITING LARGE PROGRAMS 349
 
 15.1 Source Files 349
@@ -390,7 +389,7 @@
 - Defining Macros Outside a Program 871
 
 
-==================================
+
 16 STRUCTURES, UNIONS, AND ENUMERATIONS 377
 
 16.1 Structure Variables 377
@@ -421,7 +420,7 @@
 - Enumerations as Integers 408
 - Using Enumerations to Declare "Tag Fields" 404
 
-==================================
+
 17 ADVANCED USES OF POINTERS 413
 
 17.1 Dynamic Storage Allocation 414
@@ -468,7 +467,7 @@
 17.9 Flexible Array Members (C99) 447
 - Flexible Array Members (C99) 447
 
-==================================
+
 18 DECLARATIONS 457
 
 18.1 Declaration Syntax 457
@@ -498,7 +497,7 @@
 - Restrictions on Inline Functions 474
 - Using Inline Functions with GCC 475
 
-==================================
+
 19 PROGRAM DESIGN 483
 
 19.1 Modules 484
@@ -526,7 +525,7 @@
 - ADTs in Newer Languages 508
 
 
-==================================
+
 20 LOW-LEVEL PROGRAMMING 509
 
 20.1 Bitwise Operators 509
@@ -546,7 +545,7 @@
 - Program: Viewing Memory Locations 521
 - The volatile Type Qualifier 523
 
-==================================
+
 21 THE STANDARD LIBRARY 529
 
 21.1 Using the Library 529
@@ -565,7 +564,7 @@
 21.5 The <stdbool.h> Header (C99): Boolean Type and Values 536
 - The <stdbool.h> Header (C99): Boolean Type and Values 536
 
-==================================
+
 22 INPUT/OUTPUT 539
 
 22.1 Streams 540
@@ -615,7 +614,7 @@
 - Output Functions 576
 - Input Functions 576
 
-==================================
+
 23 LIBRARY SUPPORT FOR NUMBERS AND CHARACTER DATA 589
 
 23.1 The <float.h> Header: Characteristics of Floating Types 589
@@ -664,7 +663,7 @@
 - Search Functions 619
 - Miscellaneous Functions 622
 
-==================================
+
 24 ERROR HANDLING 627
 
 24.1 The <assert.h> Header: Diagnostics 628
@@ -683,7 +682,7 @@
 24.4 The <setjmp.h> Header: Nonlocal Jumps 635
 - Program: Testing setjmp/longjmp 636
 
-==================================
+
 25 INTERNATIONAL FEATURES 641
 
 25.1 The <locale.h> Header: Localization 642
@@ -712,7 +711,7 @@
 - Formatted Wide-Character Input/Output Functions 659
 - Wide-Character Input/Output Functions 661
 - General Wide-String Utilities 662
-. Wide-Character Time-Conversion Functions 667
+- Wide-Character Time-Conversion Functions 667
 - Extended Multibyte/Wide-Character Conversion Utilities 667
 
 25.6 The <wctype.h> Header (C99): Wide-Character
@@ -722,7 +721,7 @@
 - Wide-Character Case-Mapping Functions 673
 - Extensible Wide-Character Case-Mapping Functions 673
 
-==================================
+
 26 MISCELLANEOUS LIBRARY FUNCTIONS 677
 
 26.1 The <stdarg.h> Header: Variable Arguments 677
@@ -746,7 +745,7 @@
 - Program: Displaying the Date and Time 698
 
 
-==================================
+
 27 ADDITIONAL C99 SUPPORT FOR MATHEMATICS 705
 
 27.1 The <stdint.h> Header (C99): Integer Types 705
@@ -789,23 +788,23 @@
 - Rounding Functions 730
 - Environment Functions 780
 
-==================================
+
 Appendix A C Operators 735
 
-==================================
+
 Appendix B C99 versus C89 737
 
-==================================
+
 Appendix C C89 versus K&R C 743
 
-==================================
+
 Appendix D Standard Library Functions 747
 
-==================================
+
 Appendix E ASCII Character Set 801
 
-==================================
+
 Bibliography 803
 
-==================================
+
 Index 807
