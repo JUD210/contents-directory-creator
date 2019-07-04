@@ -121,6 +121,9 @@ with open("contents.txt", "r") as contents:
             
             260 character path length limit is enabled in Windows!
             To disable it, follow below instruction.
+
+            !!! BUT, BE CAREFUL! I DON'T RECOMMEND TO DO IT.
+            Even if you disable it, some programs would raise some ERRORS! for example, Git doesn't support over 256 char path.
             
             1. Open regedit 
             2. Computer\\HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\FileSystem
@@ -136,7 +139,7 @@ with open("contents.txt", "r") as contents:
 
                     # Create text file with a whitespace.
                     with open(file_path, "w") as txt_file:
-                        txt_file.write(" ")
+                        txt_file.write("")
 
                 except FileNotFoundError as e:
                     print(e)
