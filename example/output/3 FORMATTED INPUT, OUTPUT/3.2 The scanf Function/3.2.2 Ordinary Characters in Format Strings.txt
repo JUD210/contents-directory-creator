@@ -1,0 +1,2 @@
+=== Ordinary Characters in Format Strings
+

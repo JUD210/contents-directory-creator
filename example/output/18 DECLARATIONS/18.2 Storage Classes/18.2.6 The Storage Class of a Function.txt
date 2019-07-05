@@ -1,0 +1,2 @@
+=== The Storage Class of a Function
+
