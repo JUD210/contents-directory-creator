@@ -71,7 +71,7 @@
 
 4.2 Assignment Operators 58
 - Simple Assignment 58
-- Lvaiues 59
+- Lvalues 59
 - Compound Assignment 60
 
 4.3 Increment and Decrement Operators 61
@@ -167,8 +167,8 @@
 - Advantages of Type Definitions 149
 - Type Definitions and Portability 150
 
-7.6 The eizeof Operator 151
-- The eizeof Operator 151
+7.6 The sizeof Operator 151
+- The sizeof Operator 151
 
 
 8 ARRAYS 161
